@@ -6,7 +6,7 @@ El programa implementa una versión en consola del juego Buscaminas, aplicando P
 ## Integrantes
 
 - Juan Xavier Peralta
-- 
+- Jonathan Pulupa
 - 
 - 
 
@@ -72,7 +72,8 @@ src/
 ## Ejecución del programa
 
 ### Desde Eclipse
-
+Clorar Repositorio
+git clone https://github.com/Thejoniix/examen
 1. Importar el proyecto.
 2. Abrir la clase `Main.java`.
 3. Ejecutar con:
@@ -147,6 +148,7 @@ Controlador = conecta la vista con el modelo y gestiona las acciones del jugador
 ## Persistencia
 
 La partida se guarda en un archivo binario llamado:
+
 
 ```text
 partida_buscaminas.dat
