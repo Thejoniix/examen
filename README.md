@@ -14,7 +14,7 @@ El programa implementa una versión en consola del juego Buscaminas, aplicando P
 
 El juego consiste en descubrir todas las casillas seguras de un tablero de 10x10 sin seleccionar una mina.  
 El tablero contiene 10 minas ubicadas de forma aleatoria. Las casillas descubiertas muestran el número de minas cercanas o el símbolo `V` cuando no hay minas alrededor.
-##Diagrama de lcases 
+## Diagrama de clases 
 <img width="1539" height="1463" alt="DiargamaClaseExamen" src="https://github.com/user-attachments/assets/904fbb42-4318-47f3-ad8c-530608c3abb3" />
 
 ## Funcionalidades
