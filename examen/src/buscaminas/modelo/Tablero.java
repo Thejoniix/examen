@@ -3,7 +3,7 @@ package buscaminas.modelo;
 import java.io.Serializable;
 import java.util.Random;
 
-//GENERACION TABLERO
+//Clase que genera y administra el tablero
 public class Tablero implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -14,6 +14,7 @@ public class Tablero implements Serializable {
 
     private Casilla[][] casillas;
 
+    // Constructor del tablero    
     public Tablero() {
         this.casillas = new Casilla[FILAS][COLUMNAS];
         inicializarCasillas();
@@ -21,6 +22,7 @@ public class Tablero implements Serializable {
         calcularMinasAlrededor();
     }
 
+    // Crea todas las casillas del tablero
     private void inicializarCasillas() {
         for (int fila = 0; fila < FILAS; fila++) {
             for (int columna = 0; columna < COLUMNAS; columna++) {
@@ -29,6 +31,7 @@ public class Tablero implements Serializable {
         }
     }
 
+    // Coloca minas aleatorias en el tablero
     private void colocarMinas() {
         Random random = new Random();
         int minasColocadas = 0;
@@ -44,6 +47,7 @@ public class Tablero implements Serializable {
         }
     }
 
+    // Calcula cuantas minas tiene alrededor cada casilla segura
     private void calcularMinasAlrededor() {
         for (int fila = 0; fila < FILAS; fila++) {
             for (int columna = 0; columna < COLUMNAS; columna++) {
@@ -55,6 +59,7 @@ public class Tablero implements Serializable {
         }
     }
 
+    // Cuenta las minas que rodean una casilla
     private int contarMinasAlrededor(int fila, int columna) {
         int contador = 0;
 
@@ -69,18 +74,22 @@ public class Tablero implements Serializable {
         return contador;
     }
 
+    // Verifica si una coordenada esta dentro del tablero
     public boolean estaDentroDelTablero(int fila, int columna) {
         return fila >= 0 && fila < FILAS && columna >= 0 && columna < COLUMNAS;
     }
 
+    // Devuelve una casilla especifica
     public Casilla getCasilla(int fila, int columna) {
         return casillas[fila][columna];
     }
 
+    // Devuelve la matriz de casillas
     public Casilla[][] getCasillas() {
         return casillas;
     }
 
+    // Cuenta el total de minas del tablero
     public int contarMinasTotales() {
         int contador = 0;
 

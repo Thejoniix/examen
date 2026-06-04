@@ -11,6 +11,7 @@ import buscaminas.excepciones.CasillaMarcadaException;
 import buscaminas.excepciones.CasillaYaDescubiertaException;
 import buscaminas.modelo.Juego;
 
+//Pruebas unitarias de guardar y cargar partida
 class GestorPartidaArchivoTest {
 
     @Test

@@ -2,6 +2,7 @@ package buscaminas.acciones;
 
 import buscaminas.modelo.Juego;
 
+//Accion para descubrir una casilla
 public class AccionDescubrir implements AccionJuego {
 
     @Override

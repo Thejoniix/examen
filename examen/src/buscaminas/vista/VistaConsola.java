@@ -3,9 +3,11 @@ package buscaminas.vista;
 import buscaminas.modelo.Casilla;
 import buscaminas.modelo.Tablero;
 
-//PRESENTAR INFORMACION
+//Clase encargada de mostrar informacion en consola
 public class VistaConsola {
 
+	
+    // Muestra las instrucciones iniciales
     public void mostrarInstrucciones() {
         System.out.println("===== BUSCAMINAS =====");
         System.out.println("BIENVENIDOS AL SISTEMA");
@@ -15,6 +17,8 @@ public class VistaConsola {
         System.out.println();
     }
 
+    
+    // Muestra el menu de opciones
     public void mostrarMenu() {
         System.out.println("Menú:");
         System.out.println("1. Descubrir");
@@ -25,6 +29,8 @@ public class VistaConsola {
         System.out.print("Elija una opción: ");
     }
 
+    
+    // Muestra el tablero ocultando las minas
     public void mostrarTablero(Tablero tablero) {
         System.out.println();
         System.out.println("    1 2 3 4 5 6 7 8 9 10");
@@ -45,6 +51,8 @@ public class VistaConsola {
         System.out.println();
     }
 
+    
+    // Devuelve el simbolo que representa una casilla
     private String obtenerSimboloCasilla(Casilla casilla) {
         if (casilla.isMarcada()) {
             return "M";
@@ -65,6 +73,7 @@ public class VistaConsola {
         return String.valueOf(casilla.getMinasAlrededor());
     }
 
+    // Muestra todo el tablero al finalizar el juego
     public void mostrarTableroCompleto(Tablero tablero) {
         System.out.println();
         System.out.println("Tablero final:");

@@ -14,6 +14,7 @@ import buscaminas.persistenciaDatos.GestorPartida;
 import buscaminas.persistenciaDatos.GestorPartidaArchivo;
 import buscaminas.vista.VistaConsola;
 
+//Controlador principal del juego
 public class ControladorJuego {
 
     private static final String ARCHIVO_PARTIDA = "partida_buscaminas.dat";
@@ -23,6 +24,7 @@ public class ControladorJuego {
     private Scanner scanner;
     private GestorPartida repositorio;
 
+    // Constructor del controlador
     public ControladorJuego() {
         this.juego = new Juego();
         this.vista = new VistaConsola();
@@ -30,6 +32,7 @@ public class ControladorJuego {
         this.repositorio = new GestorPartidaArchivo();
     }
 
+    // Inicia el ciclo principal del juego
     public void iniciar() {
         vista.mostrarInstrucciones();
 
@@ -69,6 +72,8 @@ public class ControladorJuego {
         finalizarJuego();
     }
 
+ 
+    // Ejecuta una accion del juego
     private void ejecutarAccion(AccionJuego accion) {
         try {
             int[] coordenada = leerCoordenada();
@@ -119,6 +124,7 @@ public class ControladorJuego {
         return new int[] { fila, columna };
     }
 
+    // Guarda la partida actual
     private void guardarPartida() {
         try {
             repositorio.guardar(juego, ARCHIVO_PARTIDA);
@@ -129,6 +135,7 @@ public class ControladorJuego {
         }
     }
 
+    // Carga una partida guardada
     private void cargarPartida() {
         try {
             juego = repositorio.cargar(ARCHIVO_PARTIDA);
@@ -139,6 +146,7 @@ public class ControladorJuego {
         }
     }
 
+    // Muestra el resultado final
     private void finalizarJuego() {
         vista.mostrarTableroCompleto(juego.getTablero());
 

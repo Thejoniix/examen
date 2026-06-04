@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import buscaminas.excepciones.CasillaMarcadaException;
 import buscaminas.excepciones.CasillaYaDescubiertaException;
 
+//Pruebas unitarias de la clase Juego
 class JuegoTest {
 
     @Test

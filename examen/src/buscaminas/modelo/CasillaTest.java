@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+//Pruebas unitarias de la clase Casilla
 class CasillaTest {
 
     @Test

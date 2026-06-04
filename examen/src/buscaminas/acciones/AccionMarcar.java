@@ -2,6 +2,7 @@ package buscaminas.acciones;
 
 import buscaminas.modelo.Juego;
 
+//Accion para marcar o desmarcar una casilla
 public class AccionMarcar implements AccionJuego {
 
     @Override

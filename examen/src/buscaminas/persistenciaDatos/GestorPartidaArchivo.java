@@ -8,7 +8,7 @@ import java.io.ObjectOutputStream;
 
 import buscaminas.modelo.Juego;
 
-//GUARDAR Y CARGAR PARTIDAS
+//Clase para guardar y cargar partidas con serializacion
 public class GestorPartidaArchivo implements GestorPartida {
 
     @Override
