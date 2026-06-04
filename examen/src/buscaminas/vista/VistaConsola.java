@@ -8,9 +8,10 @@ public class VistaConsola {
 
     public void mostrarInstrucciones() {
         System.out.println("===== BUSCAMINAS =====");
-        System.out.println("Descubra las casillas seguras y evite las minas.");
+        System.out.println("BIENVENIDOS AL SISTEMA");
+        System.out.println("Descubra las casillas seguras y evite las minas para ganar.");
         System.out.println("Ejemplos de coordenadas: B2, E6 o H9.");
-        System.out.println("Símbolos: ? cubierta | M marcada | V vacía | X mina");
+        System.out.println("Símbolos: ? cubierta | M marcada | . vacía | X mina");
         System.out.println();
     }
 
@@ -58,7 +59,7 @@ public class VistaConsola {
         }
 
         if (casilla.getMinasAlrededor() == 0) {
-            return "V";
+            return ".";
         }
 
         return String.valueOf(casilla.getMinasAlrededor());
@@ -80,7 +81,7 @@ public class VistaConsola {
                 if (casilla.tieneMina()) {
                     System.out.print("X ");
                 } else if (casilla.getMinasAlrededor() == 0) {
-                    System.out.print("V ");
+                    System.out.print(". ");
                 } else {
                     System.out.print(casilla.getMinasAlrededor() + " ");
                 }

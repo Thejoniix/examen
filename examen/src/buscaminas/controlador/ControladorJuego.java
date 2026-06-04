@@ -143,9 +143,11 @@ public class ControladorJuego {
         vista.mostrarTableroCompleto(juego.getTablero());
 
         if (juego.isVictoria()) {
-            vista.mostrarMensaje("Resultado: victoria.");
+            vista.mostrarMensaje("Resultado: VICTORIA,DESCUBRISTE TODAS LAS MINAS.");
+            vista.mostrarMensaje("GRACIAS POR UTILIZAR EL SISTEMA.");
         } else {
-            vista.mostrarMensaje("Resultado: derrota.");
+            vista.mostrarMensaje("Resultado: DERROTA ENCONTRASTE UNA MINA.");
+            vista.mostrarMensaje("VUELVA PRONTO");
         }
     }
 }
