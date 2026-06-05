@@ -8,7 +8,7 @@ El programa implementa una versión en consola del juego Buscaminas, aplicando P
 - Juan Xavier Peralta
 - Jonathan Pulupa
 - Ariel Guerrero
-
+- Carlos Hidalgo
 ## Descripción
 
 El juego consiste en descubrir todas las casillas seguras de un tablero de 10x10 sin seleccionar una mina.  
