@@ -7,8 +7,7 @@ El programa implementa una versión en consola del juego Buscaminas, aplicando P
 
 - Juan Xavier Peralta
 - Jonathan Pulupa
-- 
-- 
+- Ariel Guerrero
 
 ## Descripción
 
