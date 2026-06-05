@@ -118,7 +118,7 @@ H9
 ```text
 ?   = Casilla cubierta
 M   = Casilla marcada
-V   = Casilla vacía
+.   = Casilla vacía
 X   = Mina
 1-8 = Cantidad de minas cercanas
 ```
